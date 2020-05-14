@@ -84,7 +84,7 @@ namespace Web.Controllers
         // GET: Telegram/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(_tRepo.GetById(id));
         }
 
         // POST: Telegram/Delete/5

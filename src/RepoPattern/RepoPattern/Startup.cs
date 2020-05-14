@@ -27,7 +27,7 @@ namespace RepoPattern
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddScoped<ITelegramRepository, TelegramRepositoryInMemory>();
+            services.AddScoped<ITelegramRepository, TelegramRepositoryFs>();
             services.AddControllersWithViews();
         }
 
