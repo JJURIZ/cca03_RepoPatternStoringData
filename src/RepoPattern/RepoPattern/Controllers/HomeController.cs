@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using RepoPattern.Models;
+using ApplicationCore.Entities;
 
 namespace RepoPattern.Controllers
 {
@@ -20,6 +21,15 @@ namespace RepoPattern.Controllers
 
         public IActionResult Index()
         {
+            //Telegram newGram = new Telegram
+            //{
+            //    Id = 1,
+            //    Sender = "Jeff",
+            //    Receiver = "Shawn",
+            //    Title = "Hi Shawn",
+            //    Content = "Look! My town has a telegraph now!!"
+            //};
+
             return View();
         }
 
